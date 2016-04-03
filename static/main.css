@@ -1,0 +1,37 @@
+.ps-card {
+	width: 200px;
+	height: 400px;
+}
+.ps-type {
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid black
+}
+.ps-name {
+	float: left
+}
+.ps-image-area {
+	text-align: center;
+	clear: both
+}
+.ps-image {
+	height: 100px
+}
+.ps-move-damage {
+	float: right
+}
+.ps-topright {
+	float: right
+}
+.ps-info {
+	font-size: 80%;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px
+}
+.ps-move {
+	padding-top: 10px
+}
