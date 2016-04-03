@@ -5,7 +5,7 @@ Moves:
     - Name: Blaz Head
       Damage: 50
       Type: fire
-   - Name: Fire Shield
+    - Name: Fire Shield
       Info: -20 Damage from all attacks for 2 turns
       Type: fire
     - Name: Fire Punch
