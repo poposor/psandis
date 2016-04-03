@@ -1,0 +1,14 @@
+Name: Blazer
+Health: 90 
+Type: fire
+Moves:
+    - Name: Blaz Head
+      Damage: 50
+      Type: fire
+   - Name: Fire Shield
+      Info: -20 Damage from all attacks for 2 turns
+      Type: fire
+    - Name: Fire Punch
+      Damage: 40
+      Info: Flip a coin. If heads, burn the target
+      Type: fire

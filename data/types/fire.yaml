@@ -1,0 +1,5 @@
+Weakness:
+  - Type: water
+    Multiplier: 2
+  - Type: ice
+    Multiplier: 2
