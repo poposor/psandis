@@ -16,7 +16,9 @@
 }
 .ps-image-area {
 	text-align: center;
-	clear: both
+	clear: both;
+	border: 1px solid black;
+	padding: 2px
 }
 .ps-image {
 	height: 100px
