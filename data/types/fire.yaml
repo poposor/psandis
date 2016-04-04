@@ -1,5 +1,3 @@
-Weakness:
-  - Type: water
-    Multiplier: 2
-  - Type: ice
-    Multiplier: 2
+Interactions:
+  water: 2
+  ice: 2

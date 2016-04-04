@@ -1,6 +1,7 @@
 .ps-card {
 	width: 200px;
-	height: 400px;
+	height: 300px;
+	position: relative
 }
 .ps-type {
 	width: 0.8em;
@@ -34,4 +35,10 @@
 }
 .ps-move {
 	padding-top: 10px
+}
+.ps-card-footer {
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+	justify-content: space-between;
 }

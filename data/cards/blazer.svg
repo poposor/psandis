@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="100" style="fill: orange; stroke: black">
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="75" style="fill: orange; stroke: black">
   <ellipse cx="31" cy="65" rx="3" ry="10" transform="rotate(-20, 31, 65)" />
   <ellipse cx="19" cy="65" rx="3" ry="10" transform="rotate(20, 19, 65)" />
 

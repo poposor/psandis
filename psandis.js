@@ -22,15 +22,57 @@ var getCardData = function(name) {
 	return YAML.load('data/cards/'+name+'.yaml');
 };
 
+var getTypeData = function(name) {
+	return YAML.load('data/types/'+name+'.yaml');
+};
+
 var getCardHTML = function(name, callback) {
 	var data = getCardData(name);
 	var tr = "";
 	tr += '<div class="ps-card">';
 	if("Health" in data) {
+		var types = data.Type;
+		if(typeof types != "object") {
+			types = [types];
+		}
+		var interactions = {};
 		tr += '<span class="ps-topright">';
 		tr += '<span class="ps-health">'+data.Health+'</span>';
-		tr += '<img src="/image/type/'+data.Type+'" class="ps-type ps-type-main" />';
+		for(var i = 0; i < types.length; i++) {
+			tr += '<img src="/image/type/'+types[i]+'" class="ps-type ps-type-main" />';
+			var td = getTypeData(types[i]);
+			if("Interactions" in td) {
+				var ci = td.Interactions;
+				for(var t in ci) {
+					if(!(t in interactions)) {
+						interactions[t] = 1;
+					}
+					interactions[t] *= ci[t];
+				}
+			}
+		}
 		tr += '</span>';
+		tr += '<div class="ps-card-footer">';
+		var ri = {};
+		for(var t in interactions) {
+			var v = interactions[t];
+			if(!(v in ri)) {
+				ri[v] = [];
+			}
+			ri[v].push(t);
+		}
+		var mults = Object.keys(ri).sort(function(a,b) {return b-a});
+		for(var i = 0; i < mults.length; i++) {
+			var mult = mults[i];
+			tr += '<span class="ps-interaction-box">'+mult+'x';
+			var cit = ri[mult];
+			for(var j = 0; j < cit.length; j++) {
+				var t = cit[j];
+				tr += '<img src="/image/type/'+t+'" class="ps-type ps-type-interation" />';
+			}
+			tr += '</span>';
+		}
+		tr += '</div>';
 	}
 	tr += '<span class="ps-name">'+data.Name+'</span><br />';
 	tr += '<div class="ps-image-area">';
@@ -67,5 +109,6 @@ module.exports = {
 	getCardImagePath: getCardImagePath,
 	getTypeImagePath: getTypeImagePath,
 	getCardData: getCardData,
+	getTypeData: getTypeData,
 	getCardHTML: getCardHTML
 };

@@ -1,5 +1,3 @@
-Weakness:
-  - Type: grass
-    Multiplier: 2
-  - Type: electric
-    Multiplier: 2
+Interactions:
+  grass: 2
+  electric: 2
