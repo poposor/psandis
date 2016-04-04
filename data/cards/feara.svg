@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="fill: saddlebrown; stroke: black" width="50" height="100">
+  <path d="M 15 68 l -5 20 q -1 5 8 5 l 5 -20 z" />
+  <path d="M 35 68 l 5 20 q 1 5 -8 5 l -5 -20 z" />
+
+  <ellipse cx="25" cy="50" rx="15" ry="25" />
+
+  <circle cx="15" cy="15" r="7" />
+  <circle cx="35" cy="15" r="7" />
+
+  <g style="fill: white">
+    <circle cx="15" cy="15" r="4" />
+    <circle cx="35" cy="15" r="4" />
+  </g>
+
+  <ellipse cx="25" cy="25" rx="15" ry="13" />
+
+  <g style="fill: black">
+    <circle cx="21" cy="21" r="1" />
+    <circle cx="29" cy="21" r="1" />
+
+    <path d="M 23 25 q 2 -2 4 0 q 2 2 -2 4 q -2 0 -2 -4" />
+  </g>
+
+  <path d="M 15 30 q 2 0 2 -2 m -1 1 q 9 8 18 0 m -1 -1 q 0 2 2 2" />
+
+  <g style="fill: red">
+    <circle cx="10" cy="45" r="5" />
+    <circle cx="40" cy="45" r="5" />
+  </g>
+</svg>
