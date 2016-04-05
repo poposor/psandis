@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="100" style="fill: black; stroke: black">
+  <rect x="17" y="40" width="16" height="40" />
+
+  <rect x="8" y="8" width="34" height="34" style="fill: lime" />
+
+  <circle cx="18" cy="20" r="3" />
+  <circle cx="33" cy="20" r="3" />
+
+  <rect x="15" y="32" width="20" height="5" />
+
+  <circle cx="25" cy="80" r="15" style="fill: yellow" />
+
+  <line x1="25" y1="95" x2="25" y2="88" />
+  <line x1="30" y1="94" x2="30" y2="88" />
+  <line x1="20" y1="94" x2="20" y2="88" />
+</svg>
