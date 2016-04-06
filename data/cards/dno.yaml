@@ -1,0 +1,11 @@
+Name: Dno
+Health: 80
+Type: normal
+Moves:
+     - Name: Spike Run
+       Damage: 60
+       Recoil: 20
+       Type: normal
+     - Name: Stomp
+       Damage: 30
+       Type: normal
