@@ -18,7 +18,8 @@
 	text-align: center;
 	clear: both;
 	border: 1px solid black;
-	padding: 2px
+	padding: 2px;
+	clear: both
 }
 .ps-image {
 	height: 100px
@@ -41,4 +42,10 @@
 	bottom: 0px;
 	display: flex;
 	justify-content: space-between;
+}
+.ps-card-cell {
+	padding: 7px
+}
+table {
+	border-collapse: collapse
 }
