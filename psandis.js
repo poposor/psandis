@@ -23,7 +23,11 @@ var getCardData = function(name) {
 };
 
 var getTypeData = function(name) {
-	return YAML.load('data/types/'+name+'.yaml');
+	try {
+		return YAML.load('data/types/'+name+'.yaml');
+	} catch(e) {
+		return {};
+	}
 };
 
 var getCardHTML = function(name, callback) {
