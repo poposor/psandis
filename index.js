@@ -58,13 +58,16 @@ http.createServer(function(req, res) {
 				selected = cards.slice(spl[2]*9, spl[2]*9+9);
 			}
 			else {
-				selected = cards.sort(function(){return Math.random()-0.5;}).slice(0,9);
+				selected = [];
+				for(var i = 0; i < 9; i++) {
+					selected.push(cards[Math.floor(Math.random()*cards.length)]);
+				}
 			}
 			console.log(selected);
 			writeHeader(res);
 			res.write("<table border=1>");
 			var WIDTH = 3;
-			for(var y = 0; y < 3; y++) {
+			for(var y = 0; y < 2; y++) {
 				res.write("<tr>");
 				for(var x = 0; x < WIDTH; x++) {
 					var i = y*WIDTH+x;
