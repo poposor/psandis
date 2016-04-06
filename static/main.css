@@ -23,10 +23,7 @@
 .ps-image {
 	height: 100px
 }
-.ps-move-damage {
-	float: right
-}
-.ps-topright {
+.ps-move-damage, .ps-topright, .ps-move-recoil {
 	float: right
 }
 .ps-info {
@@ -36,7 +33,8 @@
 	padding-right: 20px
 }
 .ps-move {
-	padding-top: 10px
+	padding-top: 10px;
+	clear: both
 }
 .ps-card-footer {
 	position: absolute;
